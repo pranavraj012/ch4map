@@ -32,17 +32,29 @@ export default function Home() {
             Legend
           </h2>
           <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-8 bg-green-500 opacity-50 rounded"></div>
-              <span className="text-zinc-700 dark:text-zinc-300">Low CH4 (&lt; 1800 ppb)</span>
+            <div>
+              <h3 className="text-sm font-semibold mb-2 text-zinc-700 dark:text-zinc-300">CH4 Emissions (Raster)</h3>
+              <div className="flex flex-col gap-2 ml-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-8 bg-green-500 opacity-50 rounded"></div>
+                  <span className="text-zinc-700 dark:text-zinc-300">Low CH4 (&lt; 1800 ppb)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-8 bg-yellow-500 opacity-50 rounded"></div>
+                  <span className="text-zinc-700 dark:text-zinc-300">Medium CH4 (1800-1900 ppb)</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-8 bg-red-500 opacity-50 rounded"></div>
+                  <span className="text-zinc-700 dark:text-zinc-300">High CH4 (&gt; 1900 ppb)</span>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-8 bg-yellow-500 opacity-50 rounded"></div>
-              <span className="text-zinc-700 dark:text-zinc-300">Medium CH4 (1800-1900 ppb)</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-8 bg-red-500 opacity-50 rounded"></div>
-              <span className="text-zinc-700 dark:text-zinc-300">High CH4 (&gt; 1900 ppb)</span>
+            <div className="mt-4">
+              <h3 className="text-sm font-semibold mb-2 text-zinc-700 dark:text-zinc-300">Coal Mines</h3>
+              <div className="flex items-center gap-3 ml-4">
+                <div className="w-4 h-4 bg-red-600 rounded-full border-2 border-white shadow"></div>
+                <span className="text-zinc-700 dark:text-zinc-300">Coal Mine Location (Click for details)</span>
+              </div>
             </div>
           </div>
         </div>
